@@ -184,8 +184,10 @@ body {
   justify-content: space-between;
 }
 
-.features-item {
+.features-icon {
   width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 .features-title {
@@ -334,6 +336,11 @@ body {
   fill: currentColor;
 }
 
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--accent-text-color);
+}
+
 .client-link:focus,
 .client-link:hover {
   color: var(--accent-text-color);
@@ -411,6 +418,19 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.port-content {
+  display: block;
+  color: inherit;
+}
+
+.port-content:hover,
+.port-content:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .all-text {
