@@ -120,19 +120,29 @@ body {
   color: var(--accent-text-color);
 }
 
-.header-contacts {
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-  display: flex;
-  margin-left: auto;
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-text-color);
+}
+
+.header-contacts-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /*----------------Main content----------------*/
@@ -143,7 +153,7 @@ body {
     url('../images/main-page/bg-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1600px;
   padding: 200px 0 200px 0;
 }
 
@@ -182,6 +192,10 @@ body {
 .features-list {
   display: flex;
   justify-content: space-between;
+}
+
+.features-item {
+  width: 270px;
 }
 
 .features-icon {
@@ -355,6 +369,10 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-flex {
+  display: flex;
+}
+
 .address-link {
   font-style: normal;
   font-size: 14px;
@@ -373,6 +391,59 @@ body {
 
 .mailtel-link {
   color: var(--addres-text-color);
+}
+
+.footer-address {
+  display: flex;
+}
+
+.footer-social-container {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  background-color: #43444d;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-title-color);
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
 }
 
 /*-------------Portfolio-------------*/
